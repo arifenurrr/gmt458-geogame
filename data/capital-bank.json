@@ -1,0 +1,882 @@
+{
+  "description": "Playable countries and inhabited territories. Keys match the names in countries.geojson.",
+  "question_format": "What is the capital of {country}?",
+  "countries": {
+    "Afghanistan": {
+      "capital": "Kabul",
+      "type": "Independent"
+    },
+    "Albania": {
+      "capital": "Tirana",
+      "type": "Independent"
+    },
+    "Algeria": {
+      "capital": "Algiers",
+      "type": "Independent"
+    },
+    "American Samoa": {
+      "capital": "Pago Pago",
+      "type": "Territory / autonomous region"
+    },
+    "Angola": {
+      "capital": "Luanda",
+      "type": "Independent"
+    },
+    "Anguilla": {
+      "capital": "The Valley",
+      "type": "Territory / autonomous region"
+    },
+    "Antigua and Barbuda": {
+      "capital": "Saint John's",
+      "type": "Independent"
+    },
+    "Argentina": {
+      "capital": "Buenos Aires",
+      "type": "Independent"
+    },
+    "Armenia": {
+      "capital": "Yerevan",
+      "type": "Independent"
+    },
+    "Aruba": {
+      "capital": "Oranjestad",
+      "type": "Territory / autonomous region"
+    },
+    "Australia": {
+      "capital": "Canberra",
+      "type": "Independent"
+    },
+    "Austria": {
+      "capital": "Vienna",
+      "type": "Independent"
+    },
+    "Azerbaijan": {
+      "capital": "Baku",
+      "type": "Independent"
+    },
+    "Bahrain": {
+      "capital": "Manama",
+      "type": "Independent"
+    },
+    "Bangladesh": {
+      "capital": "Dhaka",
+      "type": "Independent"
+    },
+    "Barbados": {
+      "capital": "Bridgetown",
+      "type": "Independent"
+    },
+    "Belarus": {
+      "capital": "Minsk",
+      "type": "Independent"
+    },
+    "Belgium": {
+      "capital": "Brussels",
+      "type": "Independent"
+    },
+    "Belize": {
+      "capital": "Belmopan",
+      "type": "Independent"
+    },
+    "Benin": {
+      "capital": "Porto-Novo",
+      "type": "Independent"
+    },
+    "Bermuda": {
+      "capital": "Hamilton",
+      "type": "Territory / autonomous region"
+    },
+    "Bhutan": {
+      "capital": "Thimphu",
+      "type": "Independent"
+    },
+    "Bolivia": {
+      "capital": "Sucre",
+      "type": "Independent"
+    },
+    "Bosnia and Herzegovina": {
+      "capital": "Sarajevo",
+      "type": "Independent"
+    },
+    "Botswana": {
+      "capital": "Gaborone",
+      "type": "Independent"
+    },
+    "Brazil": {
+      "capital": "Brasília",
+      "type": "Independent"
+    },
+    "British Indian Ocean Territory": {
+      "capital": "Diego Garcia",
+      "type": "Territory / autonomous region"
+    },
+    "Brunei": {
+      "capital": "Bandar Seri Begawan",
+      "type": "Independent"
+    },
+    "Bulgaria": {
+      "capital": "Sofia",
+      "type": "Independent"
+    },
+    "Burkina Faso": {
+      "capital": "Ouagadougou",
+      "type": "Independent"
+    },
+    "Burundi": {
+      "capital": "Bujumbura",
+      "type": "Independent"
+    },
+    "Cabo Verde": {
+      "capital": "Praia",
+      "type": "Territory / autonomous region"
+    },
+    "Cambodia": {
+      "capital": "Phnom Penh",
+      "type": "Independent"
+    },
+    "Cameroon": {
+      "capital": "Yaoundé",
+      "type": "Independent"
+    },
+    "Canada": {
+      "capital": "Ottawa",
+      "type": "Independent"
+    },
+    "Cayman Islands": {
+      "capital": "George Town",
+      "type": "Territory / autonomous region"
+    },
+    "Central African Republic": {
+      "capital": "Bangui",
+      "type": "Independent"
+    },
+    "Chad": {
+      "capital": "N'Djamena",
+      "type": "Independent"
+    },
+    "Chile": {
+      "capital": "Santiago",
+      "type": "Independent"
+    },
+    "China": {
+      "capital": "Beijing",
+      "type": "Independent"
+    },
+    "Colombia": {
+      "capital": "Bogotá",
+      "type": "Independent"
+    },
+    "Comoros": {
+      "capital": "Moroni",
+      "type": "Independent"
+    },
+    "Cook Islands": {
+      "capital": "Avarua",
+      "type": "Territory / autonomous region"
+    },
+    "Costa Rica": {
+      "capital": "San José",
+      "type": "Independent"
+    },
+    "Croatia": {
+      "capital": "Zagreb",
+      "type": "Independent"
+    },
+    "Cuba": {
+      "capital": "Havana",
+      "type": "Independent"
+    },
+    "Cyprus": {
+      "capital": "Nicosia",
+      "type": "Independent"
+    },
+    "Czechia": {
+      "capital": "Prague",
+      "type": "Independent"
+    },
+    "Democratic Republic of the Congo": {
+      "capital": "Kinshasa",
+      "type": "Independent"
+    },
+    "Denmark": {
+      "capital": "Copenhagen",
+      "type": "Independent"
+    },
+    "Djibouti": {
+      "capital": "Djibouti",
+      "type": "Independent"
+    },
+    "Dominica": {
+      "capital": "Roseau",
+      "type": "Independent"
+    },
+    "Dominican Republic": {
+      "capital": "Santo Domingo",
+      "type": "Independent"
+    },
+    "East Timor": {
+      "capital": "Dili",
+      "type": "Territory / autonomous region"
+    },
+    "Ecuador": {
+      "capital": "Quito",
+      "type": "Independent"
+    },
+    "Egypt": {
+      "capital": "Cairo",
+      "type": "Independent"
+    },
+    "El Salvador": {
+      "capital": "San Salvador",
+      "type": "Independent"
+    },
+    "Equatorial Guinea": {
+      "capital": "Malabo",
+      "type": "Independent"
+    },
+    "Eritrea": {
+      "capital": "Asmara",
+      "type": "Independent"
+    },
+    "Estonia": {
+      "capital": "Tallinn",
+      "type": "Independent"
+    },
+    "Ethiopia": {
+      "capital": "Addis Ababa",
+      "type": "Independent"
+    },
+    "Falkland Islands": {
+      "capital": "Stanley",
+      "type": "Territory / autonomous region"
+    },
+    "Faroe Islands": {
+      "capital": "Tórshavn",
+      "type": "Territory / autonomous region"
+    },
+    "Federated States of Micronesia": {
+      "capital": "Palikir",
+      "type": "Territory / autonomous region"
+    },
+    "Fiji": {
+      "capital": "Suva",
+      "type": "Independent"
+    },
+    "Finland": {
+      "capital": "Helsinki",
+      "type": "Independent"
+    },
+    "France": {
+      "capital": "Paris",
+      "type": "Independent"
+    },
+    "French Polynesia": {
+      "capital": "Papeetē",
+      "type": "Territory / autonomous region"
+    },
+    "French Southern and Antarctic Lands": {
+      "capital": "Port-aux-Français",
+      "type": "Territory / autonomous region"
+    },
+    "Gabon": {
+      "capital": "Libreville",
+      "type": "Independent"
+    },
+    "Georgia": {
+      "capital": "Tbilisi",
+      "type": "Independent"
+    },
+    "Germany": {
+      "capital": "Berlin",
+      "type": "Independent"
+    },
+    "Ghana": {
+      "capital": "Accra",
+      "type": "Independent"
+    },
+    "Gibraltar": {
+      "capital": "Gibraltar",
+      "type": "Territory / autonomous region"
+    },
+    "Greece": {
+      "capital": "Athens",
+      "type": "Independent"
+    },
+    "Greenland": {
+      "capital": "Nuuk",
+      "type": "Territory / autonomous region"
+    },
+    "Grenada": {
+      "capital": "St. George's",
+      "type": "Independent"
+    },
+    "Guam": {
+      "capital": "Hagåtña",
+      "type": "Territory / autonomous region"
+    },
+    "Guatemala": {
+      "capital": "Guatemala City",
+      "type": "Independent"
+    },
+    "Guernsey": {
+      "capital": "St. Peter Port",
+      "type": "Territory / autonomous region"
+    },
+    "Guinea": {
+      "capital": "Conakry",
+      "type": "Independent"
+    },
+    "Guinea-Bissau": {
+      "capital": "Bissau",
+      "type": "Independent"
+    },
+    "Guyana": {
+      "capital": "Georgetown",
+      "type": "Independent"
+    },
+    "Haiti": {
+      "capital": "Port-au-Prince",
+      "type": "Independent"
+    },
+    "Honduras": {
+      "capital": "Tegucigalpa",
+      "type": "Independent"
+    },
+    "Hong Kong S.A.R.": {
+      "capital": "City of Victoria",
+      "type": "Territory / autonomous region"
+    },
+    "Hungary": {
+      "capital": "Budapest",
+      "type": "Independent"
+    },
+    "Iceland": {
+      "capital": "Reykjavik",
+      "type": "Independent"
+    },
+    "India": {
+      "capital": "New Delhi",
+      "type": "Independent"
+    },
+    "Indonesia": {
+      "capital": "Jakarta",
+      "type": "Independent"
+    },
+    "Iran": {
+      "capital": "Tehran",
+      "type": "Independent"
+    },
+    "Iraq": {
+      "capital": "Baghdad",
+      "type": "Independent"
+    },
+    "Ireland": {
+      "capital": "Dublin",
+      "type": "Independent"
+    },
+    "Isle of Man": {
+      "capital": "Douglas",
+      "type": "Territory / autonomous region"
+    },
+    "Israel": {
+      "capital": "Jerusalem",
+      "type": "Independent"
+    },
+    "Italy": {
+      "capital": "Rome",
+      "type": "Independent"
+    },
+    "Ivory Coast": {
+      "capital": "Yamoussoukro",
+      "type": "Territory / autonomous region"
+    },
+    "Jamaica": {
+      "capital": "Kingston",
+      "type": "Independent"
+    },
+    "Japan": {
+      "capital": "Tokyo",
+      "type": "Independent"
+    },
+    "Jersey": {
+      "capital": "Saint Helier",
+      "type": "Territory / autonomous region"
+    },
+    "Jordan": {
+      "capital": "Amman",
+      "type": "Independent"
+    },
+    "Kazakhstan": {
+      "capital": "Astana",
+      "type": "Independent"
+    },
+    "Kenya": {
+      "capital": "Nairobi",
+      "type": "Independent"
+    },
+    "Kiribati": {
+      "capital": "South Tarawa",
+      "type": "Independent"
+    },
+    "Kuwait": {
+      "capital": "Kuwait City",
+      "type": "Independent"
+    },
+    "Kyrgyzstan": {
+      "capital": "Bishkek",
+      "type": "Independent"
+    },
+    "Laos": {
+      "capital": "Vientiane",
+      "type": "Independent"
+    },
+    "Latvia": {
+      "capital": "Riga",
+      "type": "Independent"
+    },
+    "Lebanon": {
+      "capital": "Beirut",
+      "type": "Independent"
+    },
+    "Lesotho": {
+      "capital": "Maseru",
+      "type": "Independent"
+    },
+    "Liberia": {
+      "capital": "Monrovia",
+      "type": "Independent"
+    },
+    "Libya": {
+      "capital": "Tripoli",
+      "type": "Independent"
+    },
+    "Liechtenstein": {
+      "capital": "Vaduz",
+      "type": "Independent"
+    },
+    "Lithuania": {
+      "capital": "Vilnius",
+      "type": "Independent"
+    },
+    "Luxembourg": {
+      "capital": "Luxembourg",
+      "type": "Independent"
+    },
+    "Macao S.A.R": {
+      "capital": "Macau",
+      "type": "Territory / autonomous region"
+    },
+    "Madagascar": {
+      "capital": "Antananarivo",
+      "type": "Independent"
+    },
+    "Malawi": {
+      "capital": "Lilongwe",
+      "type": "Independent"
+    },
+    "Malaysia": {
+      "capital": "Kuala Lumpur",
+      "type": "Independent"
+    },
+    "Maldives": {
+      "capital": "Malé",
+      "type": "Independent"
+    },
+    "Mali": {
+      "capital": "Bamako",
+      "type": "Independent"
+    },
+    "Malta": {
+      "capital": "Valletta",
+      "type": "Independent"
+    },
+    "Marshall Islands": {
+      "capital": "Majuro",
+      "type": "Independent"
+    },
+    "Mauritania": {
+      "capital": "Nouakchott",
+      "type": "Independent"
+    },
+    "Mauritius": {
+      "capital": "Port Louis",
+      "type": "Independent"
+    },
+    "Mexico": {
+      "capital": "Mexico City",
+      "type": "Independent"
+    },
+    "Moldova": {
+      "capital": "Chișinău",
+      "type": "Independent"
+    },
+    "Monaco": {
+      "capital": "Monaco",
+      "type": "Independent"
+    },
+    "Mongolia": {
+      "capital": "Ulan Bator",
+      "type": "Independent"
+    },
+    "Montserrat": {
+      "capital": "Plymouth",
+      "type": "Territory / autonomous region"
+    },
+    "Morocco": {
+      "capital": "Rabat",
+      "type": "Independent"
+    },
+    "Mozambique": {
+      "capital": "Maputo",
+      "type": "Independent"
+    },
+    "Namibia": {
+      "capital": "Windhoek",
+      "type": "Independent"
+    },
+    "Nauru": {
+      "capital": "Yaren",
+      "type": "Independent"
+    },
+    "Nepal": {
+      "capital": "Kathmandu",
+      "type": "Independent"
+    },
+    "Netherlands": {
+      "capital": "Amsterdam",
+      "type": "Independent"
+    },
+    "New Caledonia": {
+      "capital": "Nouméa",
+      "type": "Territory / autonomous region"
+    },
+    "New Zealand": {
+      "capital": "Wellington",
+      "type": "Independent"
+    },
+    "Nicaragua": {
+      "capital": "Managua",
+      "type": "Independent"
+    },
+    "Niger": {
+      "capital": "Niamey",
+      "type": "Independent"
+    },
+    "Nigeria": {
+      "capital": "Abuja",
+      "type": "Independent"
+    },
+    "Niue": {
+      "capital": "Alofi",
+      "type": "Territory / autonomous region"
+    },
+    "Norfolk Island": {
+      "capital": "Kingston",
+      "type": "Territory / autonomous region"
+    },
+    "North Korea": {
+      "capital": "Pyongyang",
+      "type": "Independent"
+    },
+    "Northern Mariana Islands": {
+      "capital": "Saipan",
+      "type": "Territory / autonomous region"
+    },
+    "Norway": {
+      "capital": "Oslo",
+      "type": "Independent"
+    },
+    "Oman": {
+      "capital": "Muscat",
+      "type": "Independent"
+    },
+    "Pakistan": {
+      "capital": "Islamabad",
+      "type": "Independent"
+    },
+    "Palau": {
+      "capital": "Ngerulmud",
+      "type": "Independent"
+    },
+    "Panama": {
+      "capital": "Panama City",
+      "type": "Independent"
+    },
+    "Papua New Guinea": {
+      "capital": "Port Moresby",
+      "type": "Independent"
+    },
+    "Paraguay": {
+      "capital": "Asunción",
+      "type": "Independent"
+    },
+    "Peru": {
+      "capital": "Lima",
+      "type": "Independent"
+    },
+    "Philippines": {
+      "capital": "Manila",
+      "type": "Independent"
+    },
+    "Pitcairn Islands": {
+      "capital": "Adamstown",
+      "type": "Territory / autonomous region"
+    },
+    "Poland": {
+      "capital": "Warsaw",
+      "type": "Independent"
+    },
+    "Portugal": {
+      "capital": "Lisbon",
+      "type": "Independent"
+    },
+    "Puerto Rico": {
+      "capital": "San Juan",
+      "type": "Territory / autonomous region"
+    },
+    "Qatar": {
+      "capital": "Doha",
+      "type": "Independent"
+    },
+    "Republic of Serbia": {
+      "capital": "Belgrade",
+      "type": "Independent"
+    },
+    "Republic of the Congo": {
+      "capital": "Brazzaville",
+      "type": "Territory / autonomous region"
+    },
+    "Romania": {
+      "capital": "Bucharest",
+      "type": "Independent"
+    },
+    "Russia": {
+      "capital": "Moscow",
+      "type": "Independent"
+    },
+    "Rwanda": {
+      "capital": "Kigali",
+      "type": "Independent"
+    },
+    "Saint Helena": {
+      "capital": "Jamestown",
+      "type": "Territory / autonomous region"
+    },
+    "Saint Kitts and Nevis": {
+      "capital": "Basseterre",
+      "type": "Independent"
+    },
+    "Saint Lucia": {
+      "capital": "Castries",
+      "type": "Independent"
+    },
+    "Saint Pierre and Miquelon": {
+      "capital": "Saint-Pierre",
+      "type": "Territory / autonomous region"
+    },
+    "Saint Vincent and the Grenadines": {
+      "capital": "Kingstown",
+      "type": "Independent"
+    },
+    "Samoa": {
+      "capital": "Apia",
+      "type": "Independent"
+    },
+    "San Marino": {
+      "capital": "City of San Marino",
+      "type": "Independent"
+    },
+    "Saudi Arabia": {
+      "capital": "Riyadh",
+      "type": "Independent"
+    },
+    "Senegal": {
+      "capital": "Dakar",
+      "type": "Independent"
+    },
+    "Seychelles": {
+      "capital": "Victoria",
+      "type": "Independent"
+    },
+    "Sierra Leone": {
+      "capital": "Freetown",
+      "type": "Independent"
+    },
+    "Singapore": {
+      "capital": "Singapore",
+      "type": "Independent"
+    },
+    "Slovakia": {
+      "capital": "Bratislava",
+      "type": "Independent"
+    },
+    "Slovenia": {
+      "capital": "Ljubljana",
+      "type": "Independent"
+    },
+    "Solomon Islands": {
+      "capital": "Honiara",
+      "type": "Independent"
+    },
+    "Somalia": {
+      "capital": "Mogadishu",
+      "type": "Independent"
+    },
+    "South Africa": {
+      "capital": "Pretoria",
+      "type": "Independent"
+    },
+    "South Korea": {
+      "capital": "Seoul",
+      "type": "Independent"
+    },
+    "South Sudan": {
+      "capital": "Juba",
+      "type": "Independent"
+    },
+    "Spain": {
+      "capital": "Madrid",
+      "type": "Independent"
+    },
+    "Sri Lanka": {
+      "capital": "Colombo",
+      "type": "Independent"
+    },
+    "Sudan": {
+      "capital": "Khartoum",
+      "type": "Independent"
+    },
+    "Suriname": {
+      "capital": "Paramaribo",
+      "type": "Independent"
+    },
+    "Sweden": {
+      "capital": "Stockholm",
+      "type": "Independent"
+    },
+    "Switzerland": {
+      "capital": "Bern",
+      "type": "Independent"
+    },
+    "Syria": {
+      "capital": "Damascus",
+      "type": "Independent"
+    },
+    "São Tomé and Principe": {
+      "capital": "São Tomé",
+      "type": "Territory / autonomous region"
+    },
+    "Taiwan": {
+      "capital": "Taipei",
+      "type": "Independent"
+    },
+    "Tajikistan": {
+      "capital": "Dushanbe",
+      "type": "Independent"
+    },
+    "Thailand": {
+      "capital": "Bangkok",
+      "type": "Independent"
+    },
+    "The Bahamas": {
+      "capital": "Nassau",
+      "type": "Territory / autonomous region"
+    },
+    "Togo": {
+      "capital": "Lomé",
+      "type": "Independent"
+    },
+    "Tonga": {
+      "capital": "Nuku'alofa",
+      "type": "Independent"
+    },
+    "Trinidad and Tobago": {
+      "capital": "Port of Spain",
+      "type": "Independent"
+    },
+    "Tunisia": {
+      "capital": "Tunis",
+      "type": "Independent"
+    },
+    "Turkey": {
+      "capital": "Ankara",
+      "type": "Independent"
+    },
+    "Turkmenistan": {
+      "capital": "Ashgabat",
+      "type": "Independent"
+    },
+    "Tuvalu": {
+      "capital": "Funafuti",
+      "type": "Independent"
+    },
+    "Uganda": {
+      "capital": "Kampala",
+      "type": "Independent"
+    },
+    "Ukraine": {
+      "capital": "Kiev",
+      "type": "Independent"
+    },
+    "United Arab Emirates": {
+      "capital": "Abu Dhabi",
+      "type": "Independent"
+    },
+    "United Kingdom": {
+      "capital": "London",
+      "type": "Independent"
+    },
+    "United Republic of Tanzania": {
+      "capital": "Dodoma",
+      "type": "Independent"
+    },
+    "United States of America": {
+      "capital": "Washington D.C.",
+      "type": "Independent"
+    },
+    "Uruguay": {
+      "capital": "Montevideo",
+      "type": "Independent"
+    },
+    "Uzbekistan": {
+      "capital": "Tashkent",
+      "type": "Independent"
+    },
+    "Vanuatu": {
+      "capital": "Port Vila",
+      "type": "Independent"
+    },
+    "Venezuela": {
+      "capital": "Caracas",
+      "type": "Independent"
+    },
+    "Vietnam": {
+      "capital": "Hanoi",
+      "type": "Independent"
+    },
+    "Wallis and Futuna": {
+      "capital": "Mata-Utu",
+      "type": "Territory / autonomous region"
+    },
+    "Western Sahara": {
+      "capital": "El Aaiún",
+      "type": "Territory / autonomous region"
+    },
+    "Yemen": {
+      "capital": "Sana'a",
+      "type": "Independent"
+    },
+    "Zambia": {
+      "capital": "Lusaka",
+      "type": "Independent"
+    },
+    "Zimbabwe": {
+      "capital": "Harare",
+      "type": "Independent"
+    },
+    "eSwatini": {
+      "capital": "Lobamba",
+      "type": "Independent"
+    }
+  }
+}

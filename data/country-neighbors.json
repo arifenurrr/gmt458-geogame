@@ -1,0 +1,1581 @@
+{
+  "Afghanistan": [
+    "China",
+    "Iran",
+    "Pakistan",
+    "Tajikistan",
+    "Turkmenistan",
+    "Uzbekistan"
+  ],
+  "Akrotiri Sovereign Base Area": [
+    "Cyprus"
+  ],
+  "Aland": [
+    "Finland",
+    "Sweden"
+  ],
+  "Albania": [
+    "Greece",
+    "Italy",
+    "Kosovo",
+    "Montenegro",
+    "North Macedonia"
+  ],
+  "Algeria": [
+    "Libya",
+    "Mali",
+    "Mauritania",
+    "Morocco",
+    "Niger",
+    "Tunisia",
+    "Western Sahara"
+  ],
+  "American Samoa": [
+    "Cook Islands",
+    "Niue",
+    "Samoa"
+  ],
+  "Andorra": [
+    "France",
+    "Spain"
+  ],
+  "Angola": [
+    "Democratic Republic of the Congo",
+    "Namibia",
+    "Republic of the Congo",
+    "Saint Helena",
+    "Zambia"
+  ],
+  "Anguilla": [
+    "British Virgin Islands",
+    "Saint Barthelemy",
+    "Saint Martin",
+    "Sint Maarten"
+  ],
+  "Antarctica": [],
+  "Antigua and Barbuda": [
+    "Dominica",
+    "Montserrat",
+    "Saint Kitts and Nevis"
+  ],
+  "Argentina": [
+    "Bolivia",
+    "Brazil",
+    "Brazilian Island",
+    "Chile",
+    "Falkland Islands",
+    "Paraguay",
+    "Southern Patagonian Ice Field",
+    "Uruguay"
+  ],
+  "Armenia": [
+    "Azerbaijan",
+    "Georgia",
+    "Iran",
+    "Turkey"
+  ],
+  "Aruba": [
+    "Curaçao",
+    "Venezuela"
+  ],
+  "Ashmore and Cartier Islands": [
+    "Australia",
+    "Indonesia"
+  ],
+  "Australia": [
+    "Ashmore and Cartier Islands",
+    "Coral Sea Islands",
+    "East Timor",
+    "Heard Island and McDonald Islands",
+    "Indian Ocean Territories",
+    "Indonesia",
+    "New Caledonia",
+    "New Zealand",
+    "Norfolk Island",
+    "Papua New Guinea"
+  ],
+  "Austria": [
+    "Czechia",
+    "Germany",
+    "Hungary",
+    "Italy",
+    "Liechtenstein",
+    "Slovakia",
+    "Slovenia",
+    "Switzerland"
+  ],
+  "Azerbaijan": [
+    "Armenia",
+    "Georgia",
+    "Iran",
+    "Russia",
+    "Turkey"
+  ],
+  "Bahrain": [
+    "Qatar",
+    "Saudi Arabia"
+  ],
+  "Bajo Nuevo Bank (Petrel Is.)": [
+    "Jamaica"
+  ],
+  "Bangladesh": [
+    "India",
+    "Myanmar"
+  ],
+  "Barbados": [
+    "Saint Lucia",
+    "Saint Vincent and the Grenadines"
+  ],
+  "Baykonur Cosmodrome": [
+    "Kazakhstan"
+  ],
+  "Belarus": [
+    "Latvia",
+    "Lithuania",
+    "Poland",
+    "Russia",
+    "Ukraine"
+  ],
+  "Belgium": [
+    "France",
+    "Germany",
+    "Luxembourg",
+    "Netherlands",
+    "United Kingdom"
+  ],
+  "Belize": [
+    "Guatemala",
+    "Mexico"
+  ],
+  "Benin": [
+    "Burkina Faso",
+    "Niger",
+    "Nigeria",
+    "Togo"
+  ],
+  "Bermuda": [
+    "United States of America"
+  ],
+  "Bhutan": [
+    "China",
+    "India"
+  ],
+  "Bir Tawil": [
+    "Egypt",
+    "Sudan"
+  ],
+  "Bolivia": [
+    "Argentina",
+    "Brazil",
+    "Chile",
+    "Paraguay",
+    "Peru"
+  ],
+  "Bosnia and Herzegovina": [
+    "Croatia",
+    "Montenegro",
+    "Republic of Serbia"
+  ],
+  "Botswana": [
+    "Namibia",
+    "South Africa",
+    "Zimbabwe"
+  ],
+  "Brazil": [
+    "Argentina",
+    "Bolivia",
+    "Brazilian Island",
+    "Colombia",
+    "France",
+    "Guyana",
+    "Paraguay",
+    "Peru",
+    "Suriname",
+    "Uruguay",
+    "Venezuela"
+  ],
+  "Brazilian Island": [
+    "Argentina",
+    "Brazil",
+    "Uruguay"
+  ],
+  "British Indian Ocean Territory": [
+    "Maldives",
+    "Seychelles"
+  ],
+  "British Virgin Islands": [
+    "Anguilla",
+    "Puerto Rico",
+    "United States Virgin Islands"
+  ],
+  "Brunei": [
+    "Malaysia"
+  ],
+  "Bulgaria": [
+    "Greece",
+    "North Macedonia",
+    "Republic of Serbia",
+    "Romania",
+    "Turkey"
+  ],
+  "Burkina Faso": [
+    "Benin",
+    "Ghana",
+    "Ivory Coast",
+    "Mali",
+    "Niger",
+    "Togo"
+  ],
+  "Burundi": [
+    "Democratic Republic of the Congo",
+    "Rwanda",
+    "United Republic of Tanzania"
+  ],
+  "Cabo Verde": [
+    "Mauritania",
+    "Senegal"
+  ],
+  "Cambodia": [
+    "Laos",
+    "Thailand",
+    "Vietnam"
+  ],
+  "Cameroon": [
+    "Central African Republic",
+    "Chad",
+    "Equatorial Guinea",
+    "Gabon",
+    "Nigeria",
+    "Republic of the Congo"
+  ],
+  "Canada": [
+    "Greenland",
+    "Saint Pierre and Miquelon",
+    "United States of America"
+  ],
+  "Cayman Islands": [
+    "Cuba",
+    "Jamaica"
+  ],
+  "Central African Republic": [
+    "Cameroon",
+    "Chad",
+    "Democratic Republic of the Congo",
+    "Republic of the Congo",
+    "South Sudan",
+    "Sudan"
+  ],
+  "Chad": [
+    "Cameroon",
+    "Central African Republic",
+    "Libya",
+    "Niger",
+    "Nigeria",
+    "Sudan"
+  ],
+  "Chile": [
+    "Argentina",
+    "Bolivia",
+    "Peru",
+    "Southern Patagonian Ice Field"
+  ],
+  "China": [
+    "Afghanistan",
+    "Bhutan",
+    "Hong Kong S.A.R.",
+    "India",
+    "Japan",
+    "Kazakhstan",
+    "Kyrgyzstan",
+    "Laos",
+    "Macao S.A.R",
+    "Mongolia",
+    "Myanmar",
+    "Nepal",
+    "North Korea",
+    "Pakistan",
+    "Russia",
+    "Siachen Glacier",
+    "South Korea",
+    "Taiwan",
+    "Tajikistan",
+    "Vietnam"
+  ],
+  "Clipperton Island": [
+    "Mexico"
+  ],
+  "Colombia": [
+    "Brazil",
+    "Ecuador",
+    "Panama",
+    "Peru",
+    "Venezuela"
+  ],
+  "Comoros": [
+    "Madagascar",
+    "Mozambique",
+    "Seychelles",
+    "United Republic of Tanzania"
+  ],
+  "Cook Islands": [
+    "American Samoa",
+    "French Polynesia",
+    "New Zealand",
+    "Niue"
+  ],
+  "Coral Sea Islands": [
+    "Australia"
+  ],
+  "Costa Rica": [
+    "Nicaragua",
+    "Panama"
+  ],
+  "Croatia": [
+    "Bosnia and Herzegovina",
+    "Hungary",
+    "Italy",
+    "Montenegro",
+    "Republic of Serbia",
+    "Slovenia"
+  ],
+  "Cuba": [
+    "Cayman Islands",
+    "Haiti",
+    "Jamaica",
+    "Mexico",
+    "The Bahamas",
+    "US Naval Base Guantanamo Bay",
+    "United States of America"
+  ],
+  "Curaçao": [
+    "Aruba",
+    "Venezuela"
+  ],
+  "Cyprus": [
+    "Akrotiri Sovereign Base Area",
+    "Cyprus No Mans Area",
+    "Dhekelia Sovereign Base Area",
+    "Greece",
+    "Lebanon",
+    "Northern Cyprus",
+    "Syria",
+    "Turkey"
+  ],
+  "Cyprus No Mans Area": [
+    "Cyprus",
+    "Dhekelia Sovereign Base Area",
+    "Northern Cyprus"
+  ],
+  "Czechia": [
+    "Austria",
+    "Germany",
+    "Poland",
+    "Slovakia"
+  ],
+  "Democratic Republic of the Congo": [
+    "Angola",
+    "Burundi",
+    "Central African Republic",
+    "Republic of the Congo",
+    "Rwanda",
+    "South Sudan",
+    "Uganda",
+    "United Republic of Tanzania",
+    "Zambia"
+  ],
+  "Denmark": [
+    "Germany",
+    "Norway",
+    "Sweden"
+  ],
+  "Dhekelia Sovereign Base Area": [
+    "Cyprus",
+    "Cyprus No Mans Area",
+    "Northern Cyprus"
+  ],
+  "Djibouti": [
+    "Eritrea",
+    "Ethiopia",
+    "Somaliland",
+    "Yemen"
+  ],
+  "Dominica": [
+    "Antigua and Barbuda",
+    "Montserrat",
+    "Saint Lucia"
+  ],
+  "Dominican Republic": [
+    "Haiti",
+    "Puerto Rico",
+    "Turks and Caicos Islands"
+  ],
+  "East Timor": [
+    "Australia",
+    "Indonesia"
+  ],
+  "Ecuador": [
+    "Colombia",
+    "Peru"
+  ],
+  "Egypt": [
+    "Bir Tawil",
+    "Israel",
+    "Libya",
+    "Palestine",
+    "Saudi Arabia",
+    "Sudan"
+  ],
+  "El Salvador": [
+    "Guatemala",
+    "Honduras"
+  ],
+  "Equatorial Guinea": [
+    "Cameroon",
+    "Gabon",
+    "São Tomé and Principe"
+  ],
+  "Eritrea": [
+    "Djibouti",
+    "Ethiopia",
+    "Saudi Arabia",
+    "Sudan",
+    "Yemen"
+  ],
+  "Estonia": [
+    "Finland",
+    "Latvia",
+    "Russia",
+    "Sweden"
+  ],
+  "Ethiopia": [
+    "Djibouti",
+    "Eritrea",
+    "Kenya",
+    "Somalia",
+    "Somaliland",
+    "South Sudan",
+    "Sudan"
+  ],
+  "Falkland Islands": [
+    "Argentina",
+    "South Georgia and the Islands"
+  ],
+  "Faroe Islands": [
+    "Iceland",
+    "Norway",
+    "United Kingdom"
+  ],
+  "Federated States of Micronesia": [
+    "Guam",
+    "Marshall Islands",
+    "Nauru",
+    "Palau",
+    "Papua New Guinea"
+  ],
+  "Fiji": [
+    "New Caledonia",
+    "New Zealand",
+    "Samoa",
+    "Tonga",
+    "Tuvalu",
+    "Vanuatu",
+    "Wallis and Futuna"
+  ],
+  "Finland": [
+    "Aland",
+    "Estonia",
+    "Norway",
+    "Russia",
+    "Sweden"
+  ],
+  "France": [
+    "Andorra",
+    "Belgium",
+    "Brazil",
+    "Germany",
+    "Guernsey",
+    "Italy",
+    "Jersey",
+    "Luxembourg",
+    "Monaco",
+    "Spain",
+    "Suriname",
+    "Switzerland",
+    "United Kingdom"
+  ],
+  "French Polynesia": [
+    "Cook Islands",
+    "Kiribati",
+    "Pitcairn Islands"
+  ],
+  "French Southern and Antarctic Lands": [
+    "Heard Island and McDonald Islands",
+    "Madagascar"
+  ],
+  "Gabon": [
+    "Cameroon",
+    "Equatorial Guinea",
+    "Republic of the Congo",
+    "São Tomé and Principe"
+  ],
+  "Gambia": [
+    "Senegal"
+  ],
+  "Georgia": [
+    "Armenia",
+    "Azerbaijan",
+    "Russia",
+    "Turkey"
+  ],
+  "Germany": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "France",
+    "Luxembourg",
+    "Netherlands",
+    "Poland",
+    "Switzerland"
+  ],
+  "Ghana": [
+    "Burkina Faso",
+    "Ivory Coast",
+    "Togo"
+  ],
+  "Gibraltar": [
+    "Spain"
+  ],
+  "Greece": [
+    "Albania",
+    "Bulgaria",
+    "Cyprus",
+    "Italy",
+    "North Macedonia",
+    "Turkey"
+  ],
+  "Greenland": [
+    "Canada",
+    "Iceland"
+  ],
+  "Grenada": [
+    "Saint Vincent and the Grenadines",
+    "Trinidad and Tobago"
+  ],
+  "Guam": [
+    "Federated States of Micronesia",
+    "Northern Mariana Islands"
+  ],
+  "Guatemala": [
+    "Belize",
+    "El Salvador",
+    "Honduras",
+    "Mexico"
+  ],
+  "Guernsey": [
+    "France",
+    "Jersey",
+    "United Kingdom"
+  ],
+  "Guinea": [
+    "Guinea-Bissau",
+    "Ivory Coast",
+    "Liberia",
+    "Mali",
+    "Senegal",
+    "Sierra Leone"
+  ],
+  "Guinea-Bissau": [
+    "Guinea",
+    "Senegal"
+  ],
+  "Guyana": [
+    "Brazil",
+    "Suriname",
+    "Venezuela"
+  ],
+  "Haiti": [
+    "Cuba",
+    "Dominican Republic",
+    "Jamaica",
+    "Turks and Caicos Islands"
+  ],
+  "Heard Island and McDonald Islands": [
+    "Australia",
+    "French Southern and Antarctic Lands"
+  ],
+  "Honduras": [
+    "El Salvador",
+    "Guatemala",
+    "Nicaragua"
+  ],
+  "Hong Kong S.A.R.": [
+    "China",
+    "Macao S.A.R"
+  ],
+  "Hungary": [
+    "Austria",
+    "Croatia",
+    "Republic of Serbia",
+    "Romania",
+    "Slovakia",
+    "Slovenia",
+    "Ukraine"
+  ],
+  "Iceland": [
+    "Faroe Islands",
+    "Greenland",
+    "Norway",
+    "United Kingdom"
+  ],
+  "India": [
+    "Bangladesh",
+    "Bhutan",
+    "China",
+    "Maldives",
+    "Myanmar",
+    "Nepal",
+    "Pakistan",
+    "Siachen Glacier",
+    "Sri Lanka"
+  ],
+  "Indian Ocean Territories": [
+    "Australia",
+    "Indonesia"
+  ],
+  "Indonesia": [
+    "Ashmore and Cartier Islands",
+    "Australia",
+    "East Timor",
+    "Indian Ocean Territories",
+    "Malaysia",
+    "Palau",
+    "Papua New Guinea",
+    "Philippines",
+    "Singapore"
+  ],
+  "Iran": [
+    "Afghanistan",
+    "Armenia",
+    "Azerbaijan",
+    "Iraq",
+    "Oman",
+    "Pakistan",
+    "Qatar",
+    "Turkey",
+    "Turkmenistan",
+    "United Arab Emirates"
+  ],
+  "Iraq": [
+    "Iran",
+    "Jordan",
+    "Kuwait",
+    "Saudi Arabia",
+    "Syria",
+    "Turkey"
+  ],
+  "Ireland": [
+    "Isle of Man",
+    "United Kingdom"
+  ],
+  "Isle of Man": [
+    "Ireland",
+    "United Kingdom"
+  ],
+  "Israel": [
+    "Egypt",
+    "Jordan",
+    "Lebanon",
+    "Palestine",
+    "Syria"
+  ],
+  "Italy": [
+    "Albania",
+    "Austria",
+    "Croatia",
+    "France",
+    "Greece",
+    "Malta",
+    "San Marino",
+    "Slovenia",
+    "Switzerland",
+    "Tunisia",
+    "Vatican"
+  ],
+  "Ivory Coast": [
+    "Burkina Faso",
+    "Ghana",
+    "Guinea",
+    "Liberia",
+    "Mali"
+  ],
+  "Jamaica": [
+    "Bajo Nuevo Bank (Petrel Is.)",
+    "Cayman Islands",
+    "Cuba",
+    "Haiti",
+    "Serranilla Bank"
+  ],
+  "Japan": [
+    "China",
+    "Northern Mariana Islands",
+    "Russia",
+    "South Korea",
+    "Taiwan"
+  ],
+  "Jersey": [
+    "France",
+    "Guernsey",
+    "United Kingdom"
+  ],
+  "Jordan": [
+    "Iraq",
+    "Israel",
+    "Palestine",
+    "Saudi Arabia",
+    "Syria"
+  ],
+  "Kazakhstan": [
+    "Baykonur Cosmodrome",
+    "China",
+    "Kyrgyzstan",
+    "Russia",
+    "Turkmenistan",
+    "Uzbekistan"
+  ],
+  "Kenya": [
+    "Ethiopia",
+    "Seychelles",
+    "Somalia",
+    "South Sudan",
+    "Uganda",
+    "United Republic of Tanzania"
+  ],
+  "Kiribati": [
+    "French Polynesia",
+    "Marshall Islands",
+    "Nauru",
+    "Tuvalu",
+    "United States Minor Outlying Islands"
+  ],
+  "Kosovo": [
+    "Albania",
+    "Montenegro",
+    "North Macedonia",
+    "Republic of Serbia"
+  ],
+  "Kuwait": [
+    "Iraq",
+    "Saudi Arabia"
+  ],
+  "Kyrgyzstan": [
+    "China",
+    "Kazakhstan",
+    "Tajikistan",
+    "Uzbekistan"
+  ],
+  "Laos": [
+    "Cambodia",
+    "China",
+    "Myanmar",
+    "Thailand",
+    "Vietnam"
+  ],
+  "Latvia": [
+    "Belarus",
+    "Estonia",
+    "Lithuania",
+    "Russia"
+  ],
+  "Lebanon": [
+    "Cyprus",
+    "Israel",
+    "Syria"
+  ],
+  "Lesotho": [
+    "South Africa"
+  ],
+  "Liberia": [
+    "Guinea",
+    "Ivory Coast",
+    "Sierra Leone"
+  ],
+  "Libya": [
+    "Algeria",
+    "Chad",
+    "Egypt",
+    "Malta",
+    "Niger",
+    "Sudan",
+    "Tunisia"
+  ],
+  "Liechtenstein": [
+    "Austria",
+    "Switzerland"
+  ],
+  "Lithuania": [
+    "Belarus",
+    "Latvia",
+    "Poland",
+    "Russia"
+  ],
+  "Luxembourg": [
+    "Belgium",
+    "France",
+    "Germany"
+  ],
+  "Macao S.A.R": [
+    "China",
+    "Hong Kong S.A.R."
+  ],
+  "Madagascar": [
+    "Comoros",
+    "French Southern and Antarctic Lands",
+    "Mauritius",
+    "Mozambique",
+    "Seychelles"
+  ],
+  "Malawi": [
+    "Mozambique",
+    "United Republic of Tanzania",
+    "Zambia"
+  ],
+  "Malaysia": [
+    "Brunei",
+    "Indonesia",
+    "Philippines",
+    "Singapore",
+    "Spratly Islands",
+    "Thailand"
+  ],
+  "Maldives": [
+    "British Indian Ocean Territory",
+    "India",
+    "Sri Lanka"
+  ],
+  "Mali": [
+    "Algeria",
+    "Burkina Faso",
+    "Guinea",
+    "Ivory Coast",
+    "Mauritania",
+    "Niger",
+    "Senegal"
+  ],
+  "Malta": [
+    "Italy",
+    "Libya",
+    "Tunisia"
+  ],
+  "Marshall Islands": [
+    "Federated States of Micronesia",
+    "Kiribati",
+    "Nauru",
+    "United States Minor Outlying Islands"
+  ],
+  "Mauritania": [
+    "Algeria",
+    "Cabo Verde",
+    "Mali",
+    "Senegal",
+    "Western Sahara"
+  ],
+  "Mauritius": [
+    "Madagascar",
+    "Seychelles"
+  ],
+  "Mexico": [
+    "Belize",
+    "Clipperton Island",
+    "Cuba",
+    "Guatemala",
+    "United States of America"
+  ],
+  "Moldova": [
+    "Romania",
+    "Ukraine"
+  ],
+  "Monaco": [
+    "France"
+  ],
+  "Mongolia": [
+    "China",
+    "Russia"
+  ],
+  "Montenegro": [
+    "Albania",
+    "Bosnia and Herzegovina",
+    "Croatia",
+    "Kosovo",
+    "Republic of Serbia"
+  ],
+  "Montserrat": [
+    "Antigua and Barbuda",
+    "Dominica",
+    "Saint Kitts and Nevis"
+  ],
+  "Morocco": [
+    "Algeria",
+    "Spain",
+    "Western Sahara"
+  ],
+  "Mozambique": [
+    "Comoros",
+    "Madagascar",
+    "Malawi",
+    "South Africa",
+    "United Republic of Tanzania",
+    "Zambia",
+    "Zimbabwe",
+    "eSwatini"
+  ],
+  "Myanmar": [
+    "Bangladesh",
+    "China",
+    "India",
+    "Laos",
+    "Thailand"
+  ],
+  "Namibia": [
+    "Angola",
+    "Botswana",
+    "Saint Helena",
+    "South Africa",
+    "Zambia"
+  ],
+  "Nauru": [
+    "Federated States of Micronesia",
+    "Kiribati",
+    "Marshall Islands",
+    "Solomon Islands"
+  ],
+  "Nepal": [
+    "China",
+    "India"
+  ],
+  "Netherlands": [
+    "Belgium",
+    "Germany",
+    "United Kingdom"
+  ],
+  "New Caledonia": [
+    "Australia",
+    "Fiji",
+    "New Zealand",
+    "Norfolk Island",
+    "Vanuatu"
+  ],
+  "New Zealand": [
+    "Australia",
+    "Cook Islands",
+    "Fiji",
+    "New Caledonia",
+    "Norfolk Island",
+    "Tonga"
+  ],
+  "Nicaragua": [
+    "Costa Rica",
+    "Honduras"
+  ],
+  "Niger": [
+    "Algeria",
+    "Benin",
+    "Burkina Faso",
+    "Chad",
+    "Libya",
+    "Mali",
+    "Nigeria"
+  ],
+  "Nigeria": [
+    "Benin",
+    "Cameroon",
+    "Chad",
+    "Niger"
+  ],
+  "Niue": [
+    "American Samoa",
+    "Cook Islands",
+    "Tonga"
+  ],
+  "Norfolk Island": [
+    "Australia",
+    "New Caledonia",
+    "New Zealand"
+  ],
+  "North Korea": [
+    "China",
+    "Russia",
+    "South Korea"
+  ],
+  "North Macedonia": [
+    "Albania",
+    "Bulgaria",
+    "Greece",
+    "Kosovo",
+    "Republic of Serbia"
+  ],
+  "Northern Cyprus": [
+    "Cyprus",
+    "Cyprus No Mans Area",
+    "Dhekelia Sovereign Base Area",
+    "Turkey"
+  ],
+  "Northern Mariana Islands": [
+    "Guam",
+    "Japan"
+  ],
+  "Norway": [
+    "Denmark",
+    "Faroe Islands",
+    "Finland",
+    "Iceland",
+    "Russia",
+    "Sweden",
+    "United Kingdom"
+  ],
+  "Oman": [
+    "Iran",
+    "Saudi Arabia",
+    "United Arab Emirates",
+    "Yemen"
+  ],
+  "Pakistan": [
+    "Afghanistan",
+    "China",
+    "India",
+    "Iran",
+    "Siachen Glacier"
+  ],
+  "Palau": [
+    "Federated States of Micronesia",
+    "Indonesia",
+    "Philippines"
+  ],
+  "Palestine": [
+    "Egypt",
+    "Israel",
+    "Jordan"
+  ],
+  "Panama": [
+    "Colombia",
+    "Costa Rica"
+  ],
+  "Papua New Guinea": [
+    "Australia",
+    "Federated States of Micronesia",
+    "Indonesia",
+    "Solomon Islands"
+  ],
+  "Paraguay": [
+    "Argentina",
+    "Bolivia",
+    "Brazil"
+  ],
+  "Peru": [
+    "Bolivia",
+    "Brazil",
+    "Chile",
+    "Colombia",
+    "Ecuador"
+  ],
+  "Philippines": [
+    "Indonesia",
+    "Malaysia",
+    "Palau",
+    "Scarborough Reef",
+    "Spratly Islands",
+    "Taiwan",
+    "Vietnam"
+  ],
+  "Pitcairn Islands": [
+    "French Polynesia"
+  ],
+  "Poland": [
+    "Belarus",
+    "Czechia",
+    "Germany",
+    "Lithuania",
+    "Russia",
+    "Slovakia",
+    "Ukraine"
+  ],
+  "Portugal": [
+    "Spain"
+  ],
+  "Puerto Rico": [
+    "British Virgin Islands",
+    "Dominican Republic",
+    "United States Virgin Islands"
+  ],
+  "Qatar": [
+    "Bahrain",
+    "Iran",
+    "Saudi Arabia"
+  ],
+  "Republic of Serbia": [
+    "Bosnia and Herzegovina",
+    "Bulgaria",
+    "Croatia",
+    "Hungary",
+    "Kosovo",
+    "Montenegro",
+    "North Macedonia",
+    "Romania"
+  ],
+  "Republic of the Congo": [
+    "Angola",
+    "Cameroon",
+    "Central African Republic",
+    "Democratic Republic of the Congo",
+    "Gabon"
+  ],
+  "Romania": [
+    "Bulgaria",
+    "Hungary",
+    "Moldova",
+    "Republic of Serbia",
+    "Ukraine"
+  ],
+  "Russia": [
+    "Azerbaijan",
+    "Belarus",
+    "China",
+    "Estonia",
+    "Finland",
+    "Georgia",
+    "Japan",
+    "Kazakhstan",
+    "Latvia",
+    "Lithuania",
+    "Mongolia",
+    "North Korea",
+    "Norway",
+    "Poland",
+    "Ukraine",
+    "United States of America"
+  ],
+  "Rwanda": [
+    "Burundi",
+    "Democratic Republic of the Congo",
+    "Uganda",
+    "United Republic of Tanzania"
+  ],
+  "Saint Barthelemy": [
+    "Anguilla",
+    "Saint Kitts and Nevis",
+    "Saint Martin",
+    "Sint Maarten"
+  ],
+  "Saint Helena": [
+    "Angola",
+    "Namibia"
+  ],
+  "Saint Kitts and Nevis": [
+    "Antigua and Barbuda",
+    "Montserrat",
+    "Saint Barthelemy"
+  ],
+  "Saint Lucia": [
+    "Barbados",
+    "Dominica",
+    "Saint Vincent and the Grenadines"
+  ],
+  "Saint Martin": [
+    "Anguilla",
+    "Saint Barthelemy",
+    "Sint Maarten"
+  ],
+  "Saint Pierre and Miquelon": [
+    "Canada"
+  ],
+  "Saint Vincent and the Grenadines": [
+    "Barbados",
+    "Grenada",
+    "Saint Lucia"
+  ],
+  "Samoa": [
+    "American Samoa",
+    "Fiji",
+    "Tonga",
+    "Wallis and Futuna"
+  ],
+  "San Marino": [
+    "Italy"
+  ],
+  "Saudi Arabia": [
+    "Bahrain",
+    "Egypt",
+    "Eritrea",
+    "Iraq",
+    "Jordan",
+    "Kuwait",
+    "Oman",
+    "Qatar",
+    "Sudan",
+    "United Arab Emirates",
+    "Yemen"
+  ],
+  "Scarborough Reef": [
+    "Philippines"
+  ],
+  "Senegal": [
+    "Cabo Verde",
+    "Gambia",
+    "Guinea",
+    "Guinea-Bissau",
+    "Mali",
+    "Mauritania"
+  ],
+  "Serranilla Bank": [
+    "Jamaica"
+  ],
+  "Seychelles": [
+    "British Indian Ocean Territory",
+    "Comoros",
+    "Kenya",
+    "Madagascar",
+    "Mauritius"
+  ],
+  "Siachen Glacier": [
+    "China",
+    "India",
+    "Pakistan"
+  ],
+  "Sierra Leone": [
+    "Guinea",
+    "Liberia"
+  ],
+  "Singapore": [
+    "Indonesia",
+    "Malaysia"
+  ],
+  "Sint Maarten": [
+    "Anguilla",
+    "Saint Barthelemy",
+    "Saint Martin"
+  ],
+  "Slovakia": [
+    "Austria",
+    "Czechia",
+    "Hungary",
+    "Poland",
+    "Ukraine"
+  ],
+  "Slovenia": [
+    "Austria",
+    "Croatia",
+    "Hungary",
+    "Italy"
+  ],
+  "Solomon Islands": [
+    "Nauru",
+    "Papua New Guinea",
+    "Tuvalu",
+    "Vanuatu"
+  ],
+  "Somalia": [
+    "Ethiopia",
+    "Kenya",
+    "Somaliland"
+  ],
+  "Somaliland": [
+    "Djibouti",
+    "Ethiopia",
+    "Somalia",
+    "Yemen"
+  ],
+  "South Africa": [
+    "Botswana",
+    "Lesotho",
+    "Mozambique",
+    "Namibia",
+    "Zimbabwe",
+    "eSwatini"
+  ],
+  "South Georgia and the Islands": [
+    "Falkland Islands"
+  ],
+  "South Korea": [
+    "China",
+    "Japan",
+    "North Korea"
+  ],
+  "South Sudan": [
+    "Central African Republic",
+    "Democratic Republic of the Congo",
+    "Ethiopia",
+    "Kenya",
+    "Sudan",
+    "Uganda"
+  ],
+  "Southern Patagonian Ice Field": [
+    "Argentina",
+    "Chile"
+  ],
+  "Spain": [
+    "Andorra",
+    "France",
+    "Gibraltar",
+    "Morocco",
+    "Portugal"
+  ],
+  "Spratly Islands": [
+    "Malaysia",
+    "Philippines",
+    "Vietnam"
+  ],
+  "Sri Lanka": [
+    "India",
+    "Maldives"
+  ],
+  "Sudan": [
+    "Bir Tawil",
+    "Central African Republic",
+    "Chad",
+    "Egypt",
+    "Eritrea",
+    "Ethiopia",
+    "Libya",
+    "Saudi Arabia",
+    "South Sudan"
+  ],
+  "Suriname": [
+    "Brazil",
+    "France",
+    "Guyana"
+  ],
+  "Sweden": [
+    "Aland",
+    "Denmark",
+    "Estonia",
+    "Finland",
+    "Norway"
+  ],
+  "Switzerland": [
+    "Austria",
+    "France",
+    "Germany",
+    "Italy",
+    "Liechtenstein"
+  ],
+  "Syria": [
+    "Cyprus",
+    "Iraq",
+    "Israel",
+    "Jordan",
+    "Lebanon",
+    "Turkey"
+  ],
+  "São Tomé and Principe": [
+    "Equatorial Guinea",
+    "Gabon"
+  ],
+  "Taiwan": [
+    "China",
+    "Japan",
+    "Philippines"
+  ],
+  "Tajikistan": [
+    "Afghanistan",
+    "China",
+    "Kyrgyzstan",
+    "Uzbekistan"
+  ],
+  "Thailand": [
+    "Cambodia",
+    "Laos",
+    "Malaysia",
+    "Myanmar"
+  ],
+  "The Bahamas": [
+    "Cuba",
+    "Turks and Caicos Islands",
+    "United States of America"
+  ],
+  "Togo": [
+    "Benin",
+    "Burkina Faso",
+    "Ghana"
+  ],
+  "Tonga": [
+    "Fiji",
+    "New Zealand",
+    "Niue",
+    "Samoa"
+  ],
+  "Trinidad and Tobago": [
+    "Grenada",
+    "Venezuela"
+  ],
+  "Tunisia": [
+    "Algeria",
+    "Italy",
+    "Libya",
+    "Malta"
+  ],
+  "Turkey": [
+    "Armenia",
+    "Azerbaijan",
+    "Bulgaria",
+    "Cyprus",
+    "Georgia",
+    "Greece",
+    "Iran",
+    "Iraq",
+    "Northern Cyprus",
+    "Syria"
+  ],
+  "Turkmenistan": [
+    "Afghanistan",
+    "Iran",
+    "Kazakhstan",
+    "Uzbekistan"
+  ],
+  "Turks and Caicos Islands": [
+    "Dominican Republic",
+    "Haiti",
+    "The Bahamas"
+  ],
+  "Tuvalu": [
+    "Fiji",
+    "Kiribati",
+    "Solomon Islands",
+    "Wallis and Futuna"
+  ],
+  "US Naval Base Guantanamo Bay": [
+    "Cuba"
+  ],
+  "Uganda": [
+    "Democratic Republic of the Congo",
+    "Kenya",
+    "Rwanda",
+    "South Sudan",
+    "United Republic of Tanzania"
+  ],
+  "Ukraine": [
+    "Belarus",
+    "Hungary",
+    "Moldova",
+    "Poland",
+    "Romania",
+    "Russia",
+    "Slovakia"
+  ],
+  "United Arab Emirates": [
+    "Iran",
+    "Oman",
+    "Saudi Arabia"
+  ],
+  "United Kingdom": [
+    "Belgium",
+    "Faroe Islands",
+    "France",
+    "Guernsey",
+    "Iceland",
+    "Ireland",
+    "Isle of Man",
+    "Jersey",
+    "Netherlands",
+    "Norway"
+  ],
+  "United Republic of Tanzania": [
+    "Burundi",
+    "Comoros",
+    "Democratic Republic of the Congo",
+    "Kenya",
+    "Malawi",
+    "Mozambique",
+    "Rwanda",
+    "Uganda",
+    "Zambia"
+  ],
+  "United States Minor Outlying Islands": [
+    "Kiribati",
+    "Marshall Islands",
+    "United States of America"
+  ],
+  "United States Virgin Islands": [
+    "British Virgin Islands",
+    "Puerto Rico"
+  ],
+  "United States of America": [
+    "Bermuda",
+    "Canada",
+    "Cuba",
+    "Mexico",
+    "Russia",
+    "The Bahamas",
+    "United States Minor Outlying Islands"
+  ],
+  "Uruguay": [
+    "Argentina",
+    "Brazil",
+    "Brazilian Island"
+  ],
+  "Uzbekistan": [
+    "Afghanistan",
+    "Kazakhstan",
+    "Kyrgyzstan",
+    "Tajikistan",
+    "Turkmenistan"
+  ],
+  "Vanuatu": [
+    "Fiji",
+    "New Caledonia",
+    "Solomon Islands"
+  ],
+  "Vatican": [
+    "Italy"
+  ],
+  "Venezuela": [
+    "Aruba",
+    "Brazil",
+    "Colombia",
+    "Curaçao",
+    "Guyana",
+    "Trinidad and Tobago"
+  ],
+  "Vietnam": [
+    "Cambodia",
+    "China",
+    "Laos",
+    "Philippines",
+    "Spratly Islands"
+  ],
+  "Wallis and Futuna": [
+    "Fiji",
+    "Samoa",
+    "Tuvalu"
+  ],
+  "Western Sahara": [
+    "Algeria",
+    "Mauritania",
+    "Morocco"
+  ],
+  "Yemen": [
+    "Djibouti",
+    "Eritrea",
+    "Oman",
+    "Saudi Arabia",
+    "Somaliland"
+  ],
+  "Zambia": [
+    "Angola",
+    "Democratic Republic of the Congo",
+    "Malawi",
+    "Mozambique",
+    "Namibia",
+    "United Republic of Tanzania",
+    "Zimbabwe"
+  ],
+  "Zimbabwe": [
+    "Botswana",
+    "Mozambique",
+    "South Africa",
+    "Zambia"
+  ],
+  "eSwatini": [
+    "Mozambique",
+    "South Africa"
+  ]
+}

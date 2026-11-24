@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Conquest | Command Center</title>
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="top-bar">
+        <div class="logo">
+            <h1>CAPITAL CONQUEST</h1>
+            <p>Conquer the world, one capital at a time.</p>
+        </div>
+
+        <div class="game-stats">
+            <div class="stat">
+                <span>TIME</span>
+                <strong id="timer">60</strong>
+            </div>
+
+            <div class="stat">
+                <span>CONQUERED</span>
+                <strong id="score">0</strong>
+            </div>
+        </div>
+    </header>
+
+    <main class="game-container">
+
+        <section class="map-section">
+            <div class="section-heading">
+                <h2>WORLD MAP</h2>
+                <p id="map-message">
+                    Select your starting country to begin.
+                </p>
+            </div>
+
+            <div id="map"></div>
+
+            <div class="map-legend">
+                <div class="legend-item">
+                    <span class="legend-color conquered-color"></span>
+                    <span>Conquered</span>
+                </div>
+
+                <div class="legend-item">
+                    <span class="legend-color available-color"></span>
+                    <span>Available to attack</span>
+                </div>
+
+                <div class="legend-item">
+                    <span class="legend-color question-color"></span>
+                    <span>Current question</span>
+                </div>
+
+                <div class="legend-item">
+                    <span class="legend-color neutral-color"></span>
+                    <span>Not available</span>
+                </div>
+            </div>
+        </section>
+
+        <aside class="game-panel">
+
+            <div class="status-card">
+                <span class="card-label">YOUR TERRITORY</span>
+                <h2 id="territory-name">Not selected</h2>
+                <p id="territory-info">
+                    Choose a country on the map.
+                </p>
+            </div>
+
+            <div class="question-card">
+                <span class="card-label">CAPITAL QUESTION</span>
+
+                <h2 id="question">
+                    Ready to conquer the world?
+                </h2>
+
+                <p id="question-info">
+                    Select a neighboring country to attack.
+                </p>
+
+                <div id="answer-options" class="answer-options">
+                    <button class="answer-btn" disabled>A</button>
+                    <button class="answer-btn" disabled>B</button>
+                    <button class="answer-btn" disabled>C</button>
+                    <button class="answer-btn" disabled>D</button>
+                </div>
+
+                <p id="feedback"></p>
+            </div>
+
+            <div class="instructions">
+                <h3>HOW TO PLAY</h3>
+                <p>1. Select your starting country.</p>
+                <p>2. Click on a neighboring country.</p>
+                <p>3. Answer its capital city question.</p>
+                <p>4. Conquer as many countries as possible in 60 seconds!</p>
+            </div>
+
+            <button id="start-btn" class="start-btn">
+                SELECT STARTING COUNTRY
+            </button>
+
+        </aside>
+    </main>
+
+    <div id="game-over" class="game-over hidden">
+        <div class="game-over-card">
+            <h2>GAME OVER</h2>
+            <p>Your final score:</p>
+            <strong id="final-score">0</strong>
+            <p>countries conquered!</p>
+
+            <input
+                type="text"
+                id="player-name"
+                placeholder="Enter your name"
+                maxlength="20"
+            >
+
+            <button id="save-score-btn">SAVE SCORE</button>
+            <button id="play-again-btn">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Game JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
