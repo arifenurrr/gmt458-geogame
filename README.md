@@ -6,7 +6,7 @@
 
 The game combines geographical knowledge, map interaction, and time-based strategy.
 
-## Live Demo
+
 
 **Play the Game:** [https://arifenurrr.github.io/gmt458-geogame/](https://arifenurrr.github.io/gmt458-geogame/)
 
@@ -38,25 +38,6 @@ The game interface consists of two main sections: the map and the control panel.
 - **Legend:** Explains the meaning of the different colors used on the map.
 - **Leaderboard:** Displays the scores of the top five players.
 
-### Frontend Layout Sketch
-
-```text
-+----------------------------------------------------------+
-| CAPITAL CONQUEST       EN / TR       TIME      CONQUERED |
-+-----------------------------------+----------------------+
-|                                   | YOUR TERRITORY       |
-|                                   |----------------------|
-|                                   | CAPITAL QUESTION     |
-|                                   |                      |
-|           WORLD MAP               | A. Answer  B. Answer  |
-|                                   | C. Answer  D. Answer  |
-|                                   |                      |
-|                                   | HOW TO PLAY          |
-|                                   |                      |
-+-----------------------------------+----------------------+
-|                       MAP LEGEND                         |
-+----------------------------------------------------------+
-```
 
 ## 3. Game Progression and Rules
 
