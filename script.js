@@ -40,6 +40,7 @@ let activeBonus = null;
 let bonusFoundCount = 0;
 let skipBonusButton = null;
 let bonusRestoreTimeout = null;
+let bonusMarkers = null;
 
 const timerDisplay = document.getElementById("timer");
 const timerProgress = document.getElementById("timer-progress");
@@ -983,6 +984,7 @@ function createBonusRound(countryName, capitalName, points) {
     let ready = false;
 
     const markers = L.layerGroup().addTo(map);
+    bonusMarkers = markers;
     const savedCenter = map.getCenter();
     const savedZoom = map.getZoom();
 
@@ -1122,6 +1124,10 @@ render();
 bonusRestoreTimeout = setTimeout(function() {
     markers.remove();
 
+    if (bonusMarkers === markers) {
+        bonusMarkers = null;
+    }
+
     if (
         map &&
         gameStarted &&
@@ -1140,14 +1146,19 @@ bonusRestoreTimeout = setTimeout(function() {
     }
 
     function close() {
-        if (bonusRestoreTimeout) {
-            clearTimeout(bonusRestoreTimeout);
-            bonusRestoreTimeout = null;
-        }
-
-        markers.remove();
-        endRound();
+    if (bonusRestoreTimeout) {
+        clearTimeout(bonusRestoreTimeout);
+        bonusRestoreTimeout = null;
     }
+
+    markers.remove();
+
+    if (bonusMarkers === markers) {
+        bonusMarkers = null;
+    }
+
+    endRound();
+}
 
     function endRound() {
         finished = true;
@@ -1246,6 +1257,12 @@ function cancelBonusRound() {
     if (activeBonus) {
         activeBonus.close();
         activeBonus = null;
+    }
+
+    // Always remove remaining bonus markers.
+    if (bonusMarkers) {
+        bonusMarkers.remove();
+        bonusMarkers = null;
     }
 
     if (skipBonusButton) {
