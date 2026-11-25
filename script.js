@@ -545,18 +545,7 @@ function createMap() {
         maxBoundsViscosity: 1.0
     });
     
-L.tileLayer(
-    "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
-    {
-        maxZoom: 16,
-        noWrap: true,
-        bounds: L.latLngBounds(
-            [-85.0511, -180],
-            [85.0511, 180]
-        ),
-        attribution: "Tiles &copy; Esri"
-    }
-).addTo(map);
+
     countriesLayer = L.geoJSON(countryDataFeatures, {
         style: countryStyle,
         renderer: L.canvas({ padding: 0.5 }),
