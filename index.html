@@ -4,33 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capital Conquest | Command Center</title>
+    <title>Capital Conquest | Tactical Command Center</title>
 
-    <!-- Leaflet CSS -->
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Our CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="bg-grid-overlay"></div>
 
     <header class="top-bar">
         <div class="logo">
             <h1>CAPITAL CONQUEST</h1>
-            <p>Conquer the world, one capital at a time.</p>
+            <p>CONQUER THE WORLD, ONE CAPITAL AT A TIME.</p>
+        </div>
+
+        <div class="language-switch">
+            <button id="lang-en" class="lang-btn active">EN</button>
+            <button id="lang-tr" class="lang-btn">TR</button>
         </div>
 
         <div class="game-stats">
-            <div class="stat">
-                <span>TIME</span>
-                <strong id="timer">60</strong>
+            <div class="stat timer-stat">
+                <svg class="timer-ring" viewBox="0 0 84 84">
+                    <circle class="timer-ring-bg" cx="42" cy="42" r="36"></circle>
+                    <circle id="timer-progress" class="timer-ring-progress" cx="42" cy="42" r="36"></circle>
+                </svg>
+
+                <div class="timer-content">
+                    <span>TIME</span>
+                    <strong id="timer">60</strong>
+                </div>
             </div>
 
-            <div class="stat">
+            <div class="stat score-stat">
                 <span>CONQUERED</span>
                 <strong id="score">0</strong>
             </div>
@@ -39,15 +50,26 @@
 
     <main class="game-container">
 
-        <section class="map-section">
+        <section class="map-section hud-panel">
+            <span class="hud-corner tl"></span>
+            <span class="hud-corner tr"></span>
+            <span class="hud-corner bl"></span>
+            <span class="hud-corner br"></span>
+
             <div class="section-heading">
                 <h2>WORLD MAP</h2>
-                <p id="map-message">
-                    Select your starting country to begin.
-                </p>
+                <p id="map-message">Select your starting country to begin.</p>
             </div>
 
-            <div id="map"></div>
+            <div class="map-wrapper">
+                <div id="map"></div>
+                <div class="map-grid"></div>
+                <div class="radar-scan-line"></div>
+                <div class="map-crosshair-tr"></div>
+                <div class="map-ruler-left"></div>
+                <div class="map-ruler-right"></div>
+                <div class="map-ruler-bottom"></div>
+            </div>
 
             <div class="map-legend">
                 <div class="legend-item">
@@ -74,24 +96,45 @@
 
         <aside class="game-panel">
 
-            <div class="status-card">
+            <div class="status-card hud-panel gold-accent">
+                <span class="hud-corner tl"></span>
+                <span class="hud-corner tr"></span>
+                <span class="hud-corner bl"></span>
+                <span class="hud-corner br"></span>
+
                 <span class="card-label">YOUR TERRITORY</span>
+
                 <h2 id="territory-name">Not selected</h2>
-                <p id="territory-info">
-                    Choose a country on the map.
-                </p>
+                <p id="territory-info">Choose a country on the map.</p>
+
+                <div class="territory-details">
+                    <div class="territory-detail">
+                        <span>CAPITAL</span>
+                        <strong id="territory-capital">---</strong>
+                    </div>
+
+                    <div class="territory-detail">
+                        <span>NEIGHBORS</span>
+                        <strong id="territory-neighbors">---</strong>
+                    </div>
+
+                    <div class="territory-detail full-width">
+                        <span>STATUS</span>
+                        <strong id="territory-status">WAITING FOR SELECTION</strong>
+                    </div>
+                </div>
             </div>
 
-            <div class="question-card">
+            <div class="question-card hud-panel cyan-accent">
+                <span class="hud-corner tl"></span>
+                <span class="hud-corner tr"></span>
+                <span class="hud-corner bl"></span>
+                <span class="hud-corner br"></span>
+
                 <span class="card-label">CAPITAL QUESTION</span>
 
-                <h2 id="question">
-                    Ready to conquer the world?
-                </h2>
-
-                <p id="question-info">
-                    Select a neighboring country to attack.
-                </p>
+                <h2 id="question">Ready to conquer the world?</h2>
+                <p id="question-info">Select a neighboring country to attack.</p>
 
                 <div id="answer-options" class="answer-options">
                     <button class="answer-btn" disabled>A</button>
@@ -103,44 +146,90 @@
                 <p id="feedback"></p>
             </div>
 
-            <div class="instructions">
-                <h3>HOW TO PLAY</h3>
-                <p>1. Select your starting country.</p>
-                <p>2. Click on a neighboring country.</p>
-                <p>3. Answer its capital city question.</p>
-                <p>4. Conquer as many countries as possible in 60 seconds!</p>
-            </div>
-
             <button id="start-btn" class="start-btn">
                 SELECT STARTING COUNTRY
             </button>
 
+            <div class="instructions hud-panel gold-accent">
+                <span class="hud-corner tl"></span>
+                <span class="hud-corner tr"></span>
+                <span class="hud-corner bl"></span>
+                <span class="hud-corner br"></span>
+
+               
+
+    <h3>HOW TO PLAY</h3>
+
+<div class="instruction-steps">
+    <div class="instruction-item">
+        <span>01</span>
+        <p>Select your starting country.</p>
+    </div>
+
+    <div class="instruction-item">
+        <span>02</span>
+        <p>Click on a neighboring country to attack.</p>
+    </div>
+
+    <div class="instruction-item">
+        <span>03</span>
+        <p>Answer the country's capital question correctly.</p>
+    </div>
+
+    <div class="instruction-item">
+        <span>04</span>
+        <p>Find the capital on the map during the bonus round. You have 3 guesses. Get within 75 km to earn +5 seconds, or skip the bonus.</p>
+    </div>
+
+    <div class="instruction-item">
+        <span>05</span>
+        <p>Conquer as many countries as possible before time runs out!</p>
+    </div>
+</div>
+            </div>
+
         </aside>
     </main>
 
-    <div id="game-over" class="game-over hidden">
+    <!-- GAME OVER SCREEN -->
+    <section id="game-over" class="game-over hidden" aria-hidden="true">
+
         <div class="game-over-card">
             <h2>GAME OVER</h2>
-            <p>Your final score:</p>
-            <strong id="final-score">0</strong>
-            <p>countries conquered!</p>
+
+            <div class="game-over-scoreline">
+                <strong id="final-score">0</strong>
+                <span id="game-over-score-caption">countries conquered</span>
+            </div>
+
+            <p id="conquered-countries-heading">Countries conquered:</p>
+
+            <ul id="conquered-countries-list"></ul>
+
+            <label class="commander-label" for="player-name">
+                COMMANDER NAME
+            </label>
 
             <input
-                type="text"
                 id="player-name"
-                placeholder="Enter your name"
+                type="text"
                 maxlength="20"
+                placeholder="Enter your name"
+                autocomplete="off"
             >
 
-            <button id="save-score-btn">SAVE SCORE</button>
-            <button id="play-again-btn">PLAY AGAIN</button>
+            <button id="save-score-btn" class="start-btn">
+                SAVE SCORE
+            </button>
+
+            <button id="play-again-btn" class="start-btn">
+                PLAY AGAIN
+            </button>
         </div>
-    </div>
 
-    <!-- Leaflet JavaScript -->
+    </section>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <!-- Game JavaScript -->
     <script src="script.js"></script>
 
 </body>
