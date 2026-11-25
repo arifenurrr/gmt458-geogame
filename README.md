@@ -1,6 +1,6 @@
 Capital Conquest – GeoGame
 
-1. Game Description
+
 
 Capital Conquest is a geography-based strategy game in which players try to conquer as many countries as possible by answering capital city questions correctly.
 
