@@ -1,4 +1,14 @@
+
 /* CAPITAL CONQUEST - TACTICAL WAR-ROOM */
+
+// SUPABASE SHARED LEADERBOARD CONNECTION
+const SUPABASE_URL = "https://kyovuckhwvmvoxpwemxd.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_Yq6G-AH8ciGGIYvr78OVeQ_k1DYU1vl";
+
+const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_PUBLISHABLE_KEY
+);
 
 let map;
 let countriesLayer;
@@ -31,9 +41,9 @@ let gameEnded = false;
 let finalGameStats = null;
 
 // BONUS ROUND: FIND THE CAPITAL ON THE MAP
-const BONUS_ATTEMPTS = 3;      // guesses per bonus round
-const BONUS_FOUND_KM = 75;     // a guess this close finds the capital
-const BONUS_TIME_REWARD = 5;   // seconds added when the capital is found
+const BONUS_ATTEMPTS = 3;
+const BONUS_FOUND_KM = 75;
+const BONUS_TIME_REWARD = 5;
 
 let capitalCoords = {};
 let activeBonus = null;
@@ -131,12 +141,12 @@ const translations = {
         bonusSkip: "SKIP BONUS",
         bonusSummary: "Capitals found in bonus rounds: {count}",
         instructions: [
-    "Select your starting country.",
-    "Click on a neighboring country to attack.",
-    "Answer the country's capital question correctly.",
-    "Find the capital on the map during the bonus round. You have 3 guesses. Get within 75 km to earn +5 seconds, or skip the bonus.",
-    "Conquer as many countries as possible before time runs out!"
-]
+            "Select your starting country.",
+            "Click on a neighboring country to attack.",
+            "Answer the country's capital question correctly.",
+            "Find the capital on the map during the bonus round. You have 3 guesses. Get within 75 km to earn +5 seconds, or skip the bonus.",
+            "Conquer as many countries as possible before time runs out!"
+        ]
     },
 
     tr: {
@@ -202,12 +212,12 @@ const translations = {
         bonusSkip: "BONUSU ATLA",
         bonusSummary: "Bonus turlarda bulunan başkent: {count}",
         instructions: [
-    "Başlangıç ülkene tıkla.",
-    "Saldırmak için komşu bir ülkeye tıkla.",
-    "Ülkenin başkent sorusunu doğru cevapla.",
-    "Bonus turunda başkenti haritada bul. 3 tahmin hakkın var. 75 km yakınına ulaşırsan +5 saniye kazanırsın veya bonusu atlayabilirsin.",
-    "Süre dolmadan olabildiğince çok ülke fethet!"
-]
+            "Başlangıç ülkene tıkla.",
+            "Saldırmak için komşu bir ülkeye tıkla.",
+            "Ülkenin başkent sorusunu doğru cevapla.",
+            "Bonus turunda başkenti haritada bul. 3 tahmin hakkın var. 75 km yakınına ulaşırsan +5 saniye kazanırsın veya bonusu atlayabilirsin.",
+            "Süre dolmadan olabildiğince çok ülke fethet!"
+        ]
     }
 };
 
@@ -270,16 +280,16 @@ function applyLanguage() {
         t("howToPlay");
 
     const steps = document.querySelectorAll(
-    ".instructions .instruction-item p"
-);
+        ".instructions .instruction-item p"
+    );
 
-translations[currentLanguage].instructions.forEach(
-    function(instruction, index) {
-        if (steps[index]) {
-            steps[index].textContent = instruction;
+    translations[currentLanguage].instructions.forEach(
+        function(instruction, index) {
+            if (steps[index]) {
+                steps[index].textContent = instruction;
+            }
         }
-    }
-);
+    );
 
     const detailLabels = document.querySelectorAll(
         ".territory-detail span"
@@ -545,7 +555,6 @@ function createMap() {
         maxBounds: WORLD_BOUNDS,
         maxBoundsViscosity: 1.0
     });
-    
 
     countriesLayer = L.geoJSON(countryDataFeatures, {
         style: countryStyle,
@@ -555,58 +564,51 @@ function createMap() {
         onEachFeature: function(feature, layer) {
             const countryName = feature.properties.name;
             countryLayersByName[countryName] = layer;
-
-           
         }
     }).addTo(map);
 
     fitWorld();
 
-    // Bonus round guesses: every click on the map is a guess while a
-    // bonus round is running (country clicks bubble up to the map too)
-    // One physical click can reach the map more than once (the country
-    // layer passes it on to the map), so clicks closer than 400 ms
-    // together count as a single guess
+    // Bonus round guesses
     let lastBonusClickTime = 0;
 
-   map.on("click", function(event) {
+    map.on("click", function(event) {
 
-    // BONUS MODE
-    if (activeBonus) {
-        const now = Date.now();
+        // BONUS MODE
+        if (activeBonus) {
+            const now = Date.now();
 
-        if (now - lastBonusClickTime < 400) return;
+            if (now - lastBonusClickTime < 400) return;
 
-        lastBonusClickTime = now;
-        activeBonus.guess(event.latlng);
-        return;
-    }
+            lastBonusClickTime = now;
+            activeBonus.guess(event.latlng);
+            return;
+        }
 
-    // NORMAL GAME
-    if (gameEnded || currentQuestionCountry) return;
+        // NORMAL GAME
+        if (gameEnded || currentQuestionCountry) return;
 
-    const clickPoint = map.latLngToLayerPoint(event.latlng);
-    let clickedCountry = null;
+        const clickPoint = map.latLngToLayerPoint(event.latlng);
+        let clickedCountry = null;
 
-    countriesLayer.eachLayer(function(layer) {
-        if (
-            !clickedCountry &&
-            layer._containsPoint &&
-            layer._containsPoint(clickPoint)
-        ) {
-            clickedCountry = layer.feature.properties.name;
+        countriesLayer.eachLayer(function(layer) {
+            if (
+                !clickedCountry &&
+                layer._containsPoint &&
+                layer._containsPoint(clickPoint)
+            ) {
+                clickedCountry = layer.feature.properties.name;
+            }
+        });
+
+        if (!clickedCountry) return;
+
+        if (!gameStarted) {
+            selectStartingCountry(clickedCountry);
+        } else {
+            attackCountry(clickedCountry);
         }
     });
-
-    if (!clickedCountry) return;
-
-    if (!gameStarted) {
-        selectStartingCountry(clickedCountry);
-    } else {
-        attackCountry(clickedCountry);
-    }
-
-});
 
     createSkipBonusButton();
 
@@ -661,7 +663,7 @@ Promise.all([
         return r.json();
     }),
 
-    // Optional: without this file the game runs without bonus rounds
+    // Optional bonus-round coordinates
     fetch("data/capital-coords.json")
         .then(r => (r.ok ? r.json() : {}))
         .catch(() => ({}))
@@ -913,7 +915,6 @@ function disableAnswers() {
     });
 }
 
-
 // =====================================
 // BONUS ROUND: HOT AND COLD
 // =====================================
@@ -975,8 +976,6 @@ function createSkipBonusButton() {
 }
 
 // CLOSURE: each bonus round keeps its own private state
-// (guesses left, markers, saved map view). Only the returned
-// functions can read or change it.
 function createBonusRound(countryName, capitalName, points) {
     let attemptsLeft = BONUS_ATTEMPTS;
     let finished = false;
@@ -1042,23 +1041,23 @@ function createBonusRound(countryName, capitalName, points) {
         const heat = getHeat(km);
 
         // Outer glow
-L.circleMarker(latlng, {
-    radius: 16,
-    stroke: false,
-    fillColor: heat.color,
-    fillOpacity: 0.25,
-    interactive: false
-}).addTo(markers);
+        L.circleMarker(latlng, {
+            radius: 16,
+            stroke: false,
+            fillColor: heat.color,
+            fillOpacity: 0.25,
+            interactive: false
+        }).addTo(markers);
 
-// Main guess marker
-L.circleMarker(latlng, {
-    radius: 8,
-    color: "#ffffff",
-    weight: 2,
-    fillColor: heat.color,
-    fillOpacity: 1,
-    interactive: false
-}).addTo(markers);
+        // Main guess marker
+        L.circleMarker(latlng, {
+            radius: 8,
+            color: "#ffffff",
+            weight: 2,
+            fillColor: heat.color,
+            fillOpacity: 1,
+            interactive: false
+        }).addTo(markers);
 
         if (heat.key === "bonusFound") {
             finish(true);
@@ -1071,16 +1070,17 @@ L.circleMarker(latlng, {
         };
 
         feedback.style.color = heat.color;
-feedback.style.fontWeight = "900";
-feedback.style.fontSize = "17px";
-feedback.style.padding = "12px";
-feedback.style.border = "1px solid " + heat.color;
-feedback.style.borderRadius = "6px";
-feedback.style.background = heat.color + "18";
-feedback.style.textShadow = "0 0 12px " + heat.color;
-feedback.style.boxShadow = "0 0 15px " + heat.color + "30";
+        feedback.style.fontWeight = "900";
+        feedback.style.fontSize = "17px";
+        feedback.style.padding = "12px";
+        feedback.style.border = "1px solid " + heat.color;
+        feedback.style.borderRadius = "6px";
+        feedback.style.background = heat.color + "18";
+        feedback.style.textShadow = "0 0 12px " + heat.color;
+        feedback.style.boxShadow = "0 0 15px " + heat.color + "30";
 
-render();
+        render();
+
         if (attemptsLeft <= 0) {
             finish(false);
         }
@@ -1119,46 +1119,44 @@ render();
         }
 
         // Keep the capital visible briefly, then restore the previous view.
-        // Quickly restore the previous map view after the bonus round.
-// Keep the capital visible briefly, then restore the previous view.
-bonusRestoreTimeout = setTimeout(function() {
-    markers.remove();
+        bonusRestoreTimeout = setTimeout(function() {
+            markers.remove();
 
-    if (bonusMarkers === markers) {
-        bonusMarkers = null;
-    }
+            if (bonusMarkers === markers) {
+                bonusMarkers = null;
+            }
 
-    if (
-        map &&
-        gameStarted &&
-        !gameEnded &&
-        !currentQuestionCountry &&
-        !activeBonus
-    ) {
-        map.flyTo(savedCenter, savedZoom, {
-            duration: 0.8,
-            easeLinearity: 0.25
-        });
-    }
+            if (
+                map &&
+                gameStarted &&
+                !gameEnded &&
+                !currentQuestionCountry &&
+                !activeBonus
+            ) {
+                map.flyTo(savedCenter, savedZoom, {
+                    duration: 0.8,
+                    easeLinearity: 0.25
+                });
+            }
 
-    bonusRestoreTimeout = null;
-}, 1000);
+            bonusRestoreTimeout = null;
+        }, 1000);
     }
 
     function close() {
-    if (bonusRestoreTimeout) {
-        clearTimeout(bonusRestoreTimeout);
-        bonusRestoreTimeout = null;
+        if (bonusRestoreTimeout) {
+            clearTimeout(bonusRestoreTimeout);
+            bonusRestoreTimeout = null;
+        }
+
+        markers.remove();
+
+        if (bonusMarkers === markers) {
+            bonusMarkers = null;
+        }
+
+        endRound();
     }
-
-    markers.remove();
-
-    if (bonusMarkers === markers) {
-        bonusMarkers = null;
-    }
-
-    endRound();
-}
 
     function endRound() {
         finished = true;
@@ -1274,8 +1272,8 @@ function cancelBonusRound() {
         document.getElementById("map").classList.remove("bonus-active");
     }
 }
-// SIMPLIFIED GAME OVER SCREEN
 
+// SIMPLIFIED GAME OVER SCREEN
 
 function renderGameSummary() {
     const card = document.querySelector(".game-over-card");
@@ -1288,27 +1286,28 @@ function renderGameSummary() {
     const countries = finalGameStats?.gameRoute || gameRoute;
 
     card.innerHTML = "";
+
     // Close button
-const closeButton = document.createElement("button");
-closeButton.className = "game-over-close";
-closeButton.innerHTML = "&times;";
-closeButton.type = "button";
-closeButton.title = "Close";
+    const closeButton = document.createElement("button");
+    closeButton.className = "game-over-close";
+    closeButton.innerHTML = "&times;";
+    closeButton.type = "button";
+    closeButton.title = "Close";
 
-closeButton.addEventListener("click", function() {
-    if (playAgainButton) {
-        playAgainButton.click();
-    }
-});
+    closeButton.addEventListener("click", function() {
+        if (playAgainButton) {
+            playAgainButton.click();
+        }
+    });
 
-card.appendChild(closeButton);
+    card.appendChild(closeButton);
 
     // GAME OVER title
     const title = document.createElement("h2");
     title.textContent = currentLanguage === "tr" ? "OYUN BİTTİ" : "GAME OVER";
     card.appendChild(title);
 
-    // Score box: number and label together
+    // Score box
     const scoreBox = document.createElement("div");
     scoreBox.className = "final-score-heading";
 
@@ -1372,21 +1371,28 @@ card.appendChild(closeButton);
     }
 }
 
+// LEADERBOARD - SHARED SUPABASE DATABASE
 
-// LEADERBOARD
+async function getLeaderboard() {
+    const { data, error } = await supabaseClient
+        .from("leaderboard")
+        .select("player_name, score, created_at")
+        .order("score", { ascending: false })
+        .order("created_at", { ascending: true })
+        .limit(5);
 
-function getLeaderboard() {
-    try {
-        return JSON.parse(
-            localStorage.getItem("capitalConquestLeaderboard") || "[]"
-        );
-    } catch (error) {
-        console.warn("Could not read leaderboard:", error);
-        return [];
+    if (error) {
+        console.error("Could not load shared leaderboard:", error);
+        throw error;
     }
+
+    return (data || []).map(entry => ({
+        name: entry.player_name,
+        score: entry.score
+    }));
 }
 
-function renderLeaderboard() {
+async function renderLeaderboard() {
     const gameOver = document.getElementById("game-over");
     if (!gameOver) return;
 
@@ -1408,26 +1414,42 @@ function renderLeaderboard() {
     panel.querySelector("p").textContent = t("leaderboardSubtitle");
 
     const list = panel.querySelector("#leaderboard-list");
-    const scores = getLeaderboard().slice(0, 5);
+    const loadingItem = document.createElement("li");
+    loadingItem.textContent = currentLanguage === "tr"
+        ? "Skorlar yükleniyor..."
+        : "Loading scores...";
+    list.appendChild(loadingItem);
 
-    if (scores.length === 0) {
+    try {
+        const scores = await getLeaderboard();
+        list.innerHTML = "";
+
+        if (scores.length === 0) {
+            const item = document.createElement("li");
+            item.textContent = t("noScores");
+            list.appendChild(item);
+            return;
+        }
+
+        scores.forEach(entry => {
+            const item = document.createElement("li");
+            item.textContent =
+                entry.name + " — " + entry.score + " " + t("countriesLabel");
+            list.appendChild(item);
+        });
+    } catch (error) {
+        list.innerHTML = "";
         const item = document.createElement("li");
-        item.textContent = t("noScores");
+        item.textContent = currentLanguage === "tr"
+            ? "Liderlik tablosu yüklenemedi. Bağlantıyı kontrol et."
+            : "Could not load leaderboard. Check the connection.";
         list.appendChild(item);
-        return;
     }
-
-    scores.forEach(entry => {
-        const item = document.createElement("li");
-        item.textContent =
-            entry.name + " — " + entry.score + " " + t("countriesLabel");
-        list.appendChild(item);
-    });
 }
 
-// SAVE SCORE
+// SAVE SCORE TO THE SHARED DATABASE
 
-function saveCurrentScore() {
+async function saveCurrentScore() {
     const nameInput = document.getElementById("player-name");
     const name = nameInput ? nameInput.value.trim() : "";
 
@@ -1436,39 +1458,41 @@ function saveCurrentScore() {
             nameInput.focus();
             nameInput.style.borderColor = "#ff4769";
         }
-
         return;
     }
 
-    const accuracy = totalAttempts
-        ? Math.round((correctAnswers / totalAttempts) * 100)
-        : 0;
+    const saveButton = document.getElementById("save-score-btn");
 
-    const scores = getLeaderboard();
-
-    scores.push({
-        name: name.slice(0, 20),
-        score: score,
-        accuracy: accuracy,
-        date: new Date().toISOString()
-    });
-
-    scores.sort((a, b) =>
-        b.score - a.score || b.accuracy - a.accuracy
-    );
-
-    try {
-        localStorage.setItem(
-            "capitalConquestLeaderboard",
-            JSON.stringify(scores.slice(0, 5))
-        );
-    } catch (error) {
-        console.error("Could not save leaderboard:", error);
+    if (saveButton) {
+        saveButton.disabled = true;
+        saveButton.textContent =
+            currentLanguage === "tr" ? "KAYDEDİLİYOR..." : "SAVING...";
     }
 
-    renderLeaderboard();
+    const { error } = await supabaseClient
+        .from("leaderboard")
+        .insert({
+            player_name: name.slice(0, 20),
+            score: score
+        });
 
-    const saveButton = document.getElementById("save-score-btn");
+    if (error) {
+        console.error("Could not save score:", error);
+
+        if (saveButton) {
+            saveButton.disabled = false;
+            saveButton.textContent = t("saveScore");
+        }
+
+        setFeedback(currentLanguage === "tr"
+            ? "Skor kaydedilemedi. Lütfen tekrar dene."
+            : "Could not save score. Please try again.");
+
+        feedback.style.color = "#ff4769";
+        return;
+    }
+
+    await renderLeaderboard();
 
     if (saveButton) {
         saveButton.disabled = true;
