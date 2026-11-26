@@ -142,7 +142,7 @@ The leaderboard uses **Supabase** as its online database to store and retrieve s
 
 When a player finishes a game and submits their name, the score is inserted into the online leaderboard. The game retrieves the leaderboard entries from Supabase and displays the top five players. Because the scores are stored online, the leaderboard is shared across different devices and browsers rather than being limited to one browser's `localStorage`.
 
-The table is accessed from the client using the Supabase JavaScript library. Row Level Security (RLS) policies allow public score reading and score insertion, while preventing public update and delete operations. Since the leaderboard does not use player authentication, submitted names and scores are not verified identities and the system should be treated as a casual game leaderboard, not a tamper-proof ranking system.
+The table is accessed from the client using the Supabase JavaScript library. Row Level Security (RLS) policies allow public score reading and score insertion, while preventing public update and delete operations. 
 
 ## 7. Time-Based Gameplay
 
