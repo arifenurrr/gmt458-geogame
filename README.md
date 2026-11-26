@@ -6,9 +6,9 @@
 
 The game combines geographical knowledge, map interaction, and time-based strategy.
 
-
-
 **Play the Game:** [https://arifenurrr.github.io/gmt458-geogame/](https://arifenurrr.github.io/gmt458-geogame/)
+
+![Capital Conquest game screenshot](images/game-preview.png)
 
 ---
 
@@ -37,7 +37,6 @@ The game interface consists of two main sections: the map and the control panel.
 - **How to Play:** Explains the game rules and gameplay steps.
 - **Legend:** Explains the meaning of the different colors used on the map.
 - **Leaderboard:** Displays the scores of the top five players.
-
 
 ## 3. Game Progression and Rules
 
@@ -80,7 +79,7 @@ The main limitation of the game is the 60-second time limit.
 
 The Bonus Round is a special part of the game that focuses on geographical knowledge and spatial estimation skills.
 
-After the player correctly answers a country's capital question, they enter the bonus round. Instead of answering a multiple-choice question, the player must estimate the actual geographical location of the capital city on the world map.
+After the player correctly answers a country's capital question, they enter the bonus round. Instead of answering a multiple-choice question, the player must estimate the actual geographical location of the capital on the world map.
 
 ### How Does It Work?
 
@@ -92,7 +91,7 @@ After the player correctly answers a country's capital question, they enter the 
 
 ### Distance Calculation
 
-The distance between two locations is calculated using Leaflet's `map.distance()` function. This function returns the distance between two coordinates in meters, which is then converted into kilometers.
+The distance between two locations is calculated using Leaflet's `map.distance()` function. This function returns the distance in meters, which is then converted into kilometers.
 
 If multiple coordinate points are defined for a capital city, the distance between the player's guess and each coordinate point is calculated, and the closest point is taken into account.
 
@@ -139,9 +138,11 @@ The player's score is determined by the number of conquered countries.
 
 At the end of the game, the player can enter their name to save their score.
 
-The leaderboard uses the browser's `localStorage` feature to store the top five players. Players are ranked primarily by the number of conquered countries and, in case of a tie, by their answer accuracy.
+The leaderboard uses **Supabase** as its online database to store and retrieve scores. The `leaderboard` table in the Supabase PostgreSQL database stores each player's name, score, and creation timestamp.
 
-Scores are stored locally in the same browser. There is no shared online database for synchronizing scores across different devices or browsers.
+When a player finishes a game and submits their name, the score is inserted into the online leaderboard. The game retrieves the leaderboard entries from Supabase and displays the top five players. Because the scores are stored online, the leaderboard is shared across different devices and browsers rather than being limited to one browser's `localStorage`.
+
+The table is accessed from the client using the Supabase JavaScript library. Row Level Security (RLS) policies allow public score reading and score insertion, while preventing public update and delete operations. Since the leaderboard does not use player authentication, submitted names and scores are not verified identities and the system should be treated as a casual game leaderboard, not a tamper-proof ranking system.
 
 ## 7. Time-Based Gameplay
 
@@ -190,7 +191,7 @@ gmt458-geogame/
 
 **File Descriptions:**
 
-- `index.html`: Defines the HTML structure and interface elements of the game.
+- `index.html`: Defines the HTML structure and interface elements of the game, and loads the Supabase JavaScript library.
 - `style.css`: Controls the game's visual design, colors, layout, and responsive appearance.
 - `script.js`: Handles the game mechanics, map interactions, questions, timer, bonus round, and scoring system.
 - `countries.geojson`: Contains the geographical boundary data of countries around the world.
@@ -211,7 +212,8 @@ The main technologies used in this project are:
 | Turf.js 6 | Performs geographical and spatial operations |
 | GeoJSON | Represents country boundaries |
 | JSON | Stores country, neighboring country, and capital city data |
-| localStorage | Stores leaderboard scores locally |
+| Supabase JavaScript Client | Connects the game to the online leaderboard |
+| Supabase (PostgreSQL) | Stores and synchronizes leaderboard scores online |
 
 Leaflet.js is used to display the world map and handle map interactions. Turf.js is included in the project to perform spatial operations on geographical data.
 
